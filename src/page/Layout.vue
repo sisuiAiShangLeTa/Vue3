@@ -5,15 +5,15 @@
             <div class="logo">
                 <div :style="{fontSize: active.isCollapse?'14px':'20px'}">{{!active.isCollapse?'四岁喜欢徐方清':'徐方清'}}</div>
             </div>
-            <el-menu active-text-color="#ffd04b" :background-color="currentColor" class="el-menu-vertical-demo"
+            <el-menu router active-text-color="#ffd04b" :background-color="currentColor" class="el-menu-vertical-demo"
                 default-active="2" text-color="#fff" :collapse="active.isCollapse">
                 <el-sub-menu index="1">
                     <template #title>
                         <el-icon><CirclePlus /></el-icon>
                         <span>账户管理</span>
                     </template>
-                    <el-menu-item index="1-1">角色管理</el-menu-item>
-                        <el-menu-item index="1-2">账户管理</el-menu-item>
+                    <el-menu-item index="/layout/role">角色管理</el-menu-item>
+                        <el-menu-item index="/layout/addmie">账户管理</el-menu-item>
                 </el-sub-menu>
                 <el-sub-menu index="2">
                     <template #title>
@@ -64,7 +64,9 @@
                     </el-menu>
                 </div>
             </div>
-            <div class="bottom">3</div>
+            <div class="bottom" :style="{padding:'10px'}">
+                <RouterView></RouterView>
+            </div>
         </div>
 
     </div>

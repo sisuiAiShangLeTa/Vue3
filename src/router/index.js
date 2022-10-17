@@ -8,7 +8,20 @@ const routes=[
     {
         path:'/layout',
         name:'Layout',
-        component:()=>import('../page/Layout.vue')
+        component:()=>import('../page/Layout.vue'),
+        children:[
+            {
+                path:'role',
+                name:'Role',
+                component:()=>import('../page/Role.vue')
+            },
+            {
+                path:'addmie',
+                name:'addmie',
+                component:()=>import('../page/addmie.vue')
+            },
+            
+        ]
     }
 ]
 const router=createRouter({
