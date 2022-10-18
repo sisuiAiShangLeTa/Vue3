@@ -3,6 +3,7 @@ const routes=[
     {
         path:'/',
         name:'Index',
+        redirect:'/layout',
         component:()=>import('../App.vue')
     },
     {
