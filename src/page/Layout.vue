@@ -3,7 +3,7 @@
 
         <div class="left" :style="{width:active.isCollapse?'65px':'200px',background:currentColor}">
             <div class="logo">
-                <div :style="{fontSize: active.isCollapse?'14px':'20px'}">{{!active.isCollapse?'四岁喜欢徐方清':'徐方清'}}</div>
+                <div :style="{fontSize: active.isCollapse?'14px':'20px'}">{{!active.isCollapse?'vue3练手后台':'vue3'}}</div>
             </div>
             <el-menu router active-text-color="#ffd04b" :background-color="currentColor" class="el-menu-vertical-demo"
                 default-active="2" text-color="#fff" :collapse="active.isCollapse">
